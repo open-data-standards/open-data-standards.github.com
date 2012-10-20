@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
   <head>
     <meta charset='utf-8' />
@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Open-data-standards.github.com</title>
+    <title>Interoperability Standards to Create an Open Data Substrate</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/open-data-standards">View on GitHub</a>
 
-          <h1 id="project_title">Open-data-standards.github.com</h1>
-          <h2 id="project_tagline">Open data standards</h2>
+          <h1 id="project_title">The Open Data Substrate</h1>
+          <h2 id="project_tagline">Creating interoperability standards without a standards body</h2>
 
         </header>
     </div>
@@ -27,33 +27,79 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+        <h3>What is an Open Data "Substrate"?</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>The goal of this organization is to provide a forum and a place to create standards so Open Data implementors can make sure they
+are building systems that can inter-operate.  This drives from a fundamental belief that “data
+    is more useful” when “more people can use it”.  To help achieve that goal, we need standards and
+agreements so an organization opening their data on any open data product will have the benefit of it being able to replicate
+or be referenced from any other open data product. </p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+    <p>We call this a <strong>substrate</strong>, because we believe these are the required standards needed
+to prevent lock-in and provide the base that higher level knowledge networks and applications can be built on top of.</p>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>The current challenge in the market is that we run a risk of API fragmentation, and lack of interoperability.  As more companies
+    and products enter the market, we run the risk of this getting harder, not easier.  Imagine a few years down the line.
+    If there are 4 different vendors and 6 open source projects.  If none of them share the same APIs or none can federate we
+    go back to creating a bunch of data stove pipes, instead of an open network of data.In short, we will be making it harder for people to
+    ultimately use this data, so we will be making the data less valuable.</p>
 
-<h3>Designer Templates</h3>
+<p>We need something that looks more like an Open Data Network, rather than thousands of Open Data sites.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h3>Why Not a Traditional Standards Organization?</h3>
 
-<h3>Rather Drive Stick?</h3>
+<p>We want everyone to get a voice, but decisions to be made as a meritocracy.  Sound like how Open Source Software works?  That's not by accident.
+Many of the people working on Open Data are working in Open Source.  In addition, many don't have the money required to join traditional standards organizations.
+    Here's the approach we suggest:
+    <ul>
+          <li>Specifications are written and stored in Git.</li>
+          <li>Issues with standards can be created as issues and will be debated and resolved as software issues would be</li>
+          <li>Use the <a href="https://groups.google.com/forum/#!forum/opendatastandards">Open Data Standards Google Group</a> </li>
+          <li>In general, operate like an open source community.</li>
+    </ul>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+We're hoping this will allow the biggest number of people to help give input and direction, and that when we have a few implementations we can then go to a standards body to make this official.
+</p>
 
-<h3>Authors and Contributors</h3>
+<h3>What do we want to solve?</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+    There are a number of use cases that are coming to light, that we would like to be able to support:
+    <ul>
+        <li><strong>Super Catalogs for browsing diverse datasets</strong> <p>Datasets can be organized in many different ways.  Imagine a dataset like Chicago Crimes, where it is published
+            by the City of Chicago and surfaced by the Chicago's data catalog.  However, there are several other communities of researchers or citizens that may be interested in it.  Many of these
+            communities want to create more specialized data catalogs that don't necassarily host the data, but point their members to all the relevant datasets located elsewhere.
+            For example, organizations interested in a Chicago Crime dataset may be:  researchers interested in crime around the US, researchers interested in big cities around the world,
+            people living in Chicago may be interested in it, organizations trying determine "livability" for cities may be interested in it, etc.</p>
 
-<h3>Support or Contact</h3>
+            <p>These organizations should be able to create their own catalogs, that include other datasets while being able to keep in sync with changes in metadata
+            (such as new formats, views, derived datasets, etc.).  We would like to support protocols, so that anyone creating a super catalog would be able to federate and see changes
+        in a uniform way (regardless of vender or version)</p></li>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+        <li><strong>API lists for exposing what APIs are exposed</strong> <p>Organizations like the federal government are pushing towards an API-first approach to building out their infrastructure.  Many of these
+        APIs are primarily built to expose data, however, given the large number of datasets it is critically important that these APIs can be gathered and managed in automated fashions across a diverse set of
+            implementations.  We will support protocols and formats to describe the APIs, so they can be programmatically gathered for any organization aggregated, put in catalogs, etc.</p></li>
+
+        <li><strong>Data Querying</strong> <p>As the number of APIs on top of data increases, we would like to standardize on the languages and protocols used to query and update data.  So, if Yelp begins using an
+            API on Restaurant Inspection Data, they should be able have a standard query language that can work across any Open Data implementation.</p></li>
+
+        <li><strong>Data Federation</strong><p>Some organizations or people may be interested in having some datasets stored locally.  This may be because they have expensive analytics they need to run, they may want to
+            experiment with "learning" approaches, or they may simply want to have a back-up.  We would like to provide the protocols so that anyone looking to federate data will be able to keep in sync with changing
+        data sets.</p></li>
+    </ul>
+
+
+
+
+<h3>Abstactions</h3>
+  There are two main abstractions in Open Data Solutions right now:
+          <ol>
+              <li>Catalog</li>
+              <li>Data Store</li>
+          </ol>
+
+<b>Catalogs</b> exist to point to datasets and to potentially store metadata about them.
+
+     </section>
     </div>
 
     <!-- FOOTER  -->
