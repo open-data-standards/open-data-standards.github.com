@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Open-data-standards.github.com : Open data standards" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Use Cases for an Open Data Substrate</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+        <a id="forkme_banner" href="https://github.com/open-data-standards">View on GitHub</a>
+
+        <h1 id="project_title">Use Cases</h1>
+
+    </header>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <h3>What do we want to solve?</h3>
+
+        There are a number of use cases that are coming to light, that we would like to be able to support:
+        <ul>
+            <li><strong>Super Catalogs for browsing diverse datasets</strong> <p>Datasets can be organized in many different ways.  Imagine a dataset like Chicago Crimes, where it is published
+                by the City of Chicago and surfaced by the Chicago's data catalog.  However, there are several other communities of researchers or citizens that may be interested in it.  Many of these
+                communities want to create more specialized data catalogs that don't necassarily host the data, but point their members to all the relevant datasets located elsewhere.
+                For example, organizations interested in a Chicago Crime dataset may be:  researchers interested in crime around the US, researchers interested in big cities around the world,
+                people living in Chicago may be interested in it, organizations trying determine "livability" for cities may be interested in it, etc.</p>
+
+                <p>These organizations should be able to create their own catalogs, that include other datasets while being able to keep in sync with changes in metadata
+                    (such as new formats, views, derived datasets, etc.).  We would like to support protocols, so that anyone creating a super catalog would be able to federate and see changes
+                    in a uniform way (regardless of vender or version)</p></li>
+
+            <li><strong>API lists for exposing what APIs are exposed</strong> <p>Organizations like the federal government are pushing towards an API-first approach to building out their infrastructure.  Many of these
+                APIs are primarily built to expose data, however, given the large number of datasets it is critically important that these APIs can be gathered and managed in automated fashions across a diverse set of
+                implementations.  We will support protocols and formats to describe the APIs, so they can be programmatically gathered for any organization aggregated, put in catalogs, etc.</p></li>
+
+            <li><strong>Data Querying</strong> <p>As the number of APIs on top of data increases, we would like to standardize on the languages and protocols used to query and update data.  So, if Yelp begins using an
+                API on Restaurant Inspection Data, they should be able have a standard query language that can work across any Open Data implementation.</p></li>
+
+            <li><strong>Data Federation</strong><p>Some organizations or people may be interested in having some datasets stored locally.  This may be because they have expensive analytics they need to run, they may want to
+                experiment with "learning" approaches, or they may simply want to have a back-up.  We would like to provide the protocols so that anyone looking to federate data will be able to keep in sync with changing
+                data sets.</p></li>
+        </ul>
+
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+
+
+
+</body>
+</html>
