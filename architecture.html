@@ -28,14 +28,36 @@
     <section id="main_content" class="inner">
         <h3>Abstractions</h3>
         <img src="images/OpenDataAbstractions.png" >
-        There are two main abstractions in Open Data Solutions right now:
-        <ol>
-            <li>Catalog</li>
-            <li>Data Store</li>
-        </ol>
+        There are two main abstractions in Open Data Solutions:
+        <ul>
+            <li><strong>Catalogs</strong> list datasets, visualizations and APIs.  They are generally
+                where people can organize, search and browse these items.</li>
+            <li><strong>Data Stores</strong> exist to store and serve-up the actual data and metadata around each
+                dataset.  They are generally where people can view the contents of a dataset, and sometimes create
+            visualizations and derived datasets from them.</li>
+        </ul>
 
-        <strong>Catalogs</strong> exist to point to datasets and to potentially store metadata about them.
-        <strong>Data Stores</strong> exist to store and serve-up data.
+        Each of these abstractions need to have standard ways of interacting.
+
+        <h3>Proposed Catalog Standards</h3>
+        <p>
+            Catalogs need to standardize on the following interactions:
+            <ol>
+                <li>Protocol and format for exposing their entries.</li>
+                <li>Queries over dataset metadata.</li>
+                <li>Protocols for finding changes to a catalog</li>
+            </ol>
+        </p>
+        <h3>Proposed Data Store Standards</h3>
+        <p>
+            Data Stores need to standardize on the following interactions:
+        <ol>
+            <li>Queries over dataset contents.</li>
+            <li>Protocols for finding changes to a dataset</li>
+            <li>Minimum formats for exporting datasets</li>
+        </ol>
+        </p>
+
 
     </section>
 </div>
