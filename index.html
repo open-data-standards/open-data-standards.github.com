@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
   <head>
     <meta charset='utf-8' />
@@ -36,7 +36,8 @@ agreements so an organization opening their data on any open data product will h
 or be referenced from any other open data product. </p>
 
     <p>We call this a <strong>substrate</strong>, because we believe these are the required standards needed
-to prevent lock-in and provide the base that higher level knowledge networks and applications can be built on top of.</p>
+to promote interoperability and vendor portability.  This will provide the base that higher level knowledge networks
+        and applications can be built on top of.</p>
 
 <p>The current challenge in the market is that we run a risk of API fragmentation, and lack of interoperability.  As more companies
     and products enter the market, we run the risk of this getting harder, not easier.  Imagine a few years down the line.
@@ -61,10 +62,35 @@ Many of the people working on Open Data are working in Open Source.  In addition
 We're hoping this will allow the biggest number of people to help give input and direction, and that when we have a few implementations we can then go to a standards body to make this official.
 </p>
 
+          <h6>Catalog Federation for browsing diverse datasets</h6>  <a href="http://open-data-standards.github.com/data-catalog-schema/">See catalog.xml in data-catalog-schema for related efforts</a>
+          <p>Datasets can be organized in many different ways.  Imagine a dataset like Chicago Crimes, where it is published
+              by the City of Chicago and surfaced by the Chicago's data catalog.  However, there are several other communities of researchers or citizens that may be interested in it.  Many of these
+              communities want to create more specialized data catalogs that don't necassarily host the data, but point their members to all the relevant datasets located elsewhere.
+              For example, organizations interested in a Chicago Crime dataset may be:  researchers interested in crime around the US, researchers interested in big cities around the world,
+              people living in Chicago may be interested in it, organizations trying determine "livability" for cities may be interested in it, etc.</p>
+
+          <p>These organizations should be able to create their own catalogs, that include other datasets while being able to keep in sync with changes in metadata
+              (such as new formats, views, derived datasets, etc.).  We would like to support protocols, so that anyone creating a super catalog would be able to federate and see changes
+              in a uniform way (regardless of vender or version)</p>
+
+          <h6>API lists for exposing what APIs are exposed</h6>  <a href="http://open-data-standards.github.com/data-catalog-schema/">See apis.xml in data-catalog-schema for related efforts</a>
+          <p>Organizations like the federal government are pushing towards an API-first approach to building out their infrastructure.  Many of these
+              APIs are primarily built to expose data, however, given the large number of datasets it is critically important that these APIs can be gathered and managed in automated fashions across a diverse set of
+              implementations.  We will support protocols and formats to describe the APIs, so they can be programmatically gathered for any organization aggregated, put in catalogs, etc.</p>
+
+          <h6>Data Querying</h6>
+          <p>As the number of APIs on top of data increases, we would like to standardize on the languages and protocols used to query and update data.  So, if Yelp begins using an
+              API on Restaurant Inspection Data, they should be able have a standard query language that can work across any Open Data implementation.</p>
+
+          <h6>Data Federation</h6>
+          <p>Some organizations or people may be interested in having some datasets stored locally.  This may be because they have expensive analytics they need to run, they may want to
+              experiment with "learning" approaches, or they may simply want to have a back-up.  We would like to provide the protocols so that anyone looking to federate data will be able to keep in sync with changing
+              data sets.</p>
+
+
+
           <ul>
-            <li><a href="usecases.html">Link to Use Cases</a></li>
             <li><a href="architecture.html">Link to Abstractions and Architectures</a></li>
-            <li><a href="references.html">Link to References and other relevant standards</a></li>
             <li><a href="efforts.html">Link to current standardization efforts</a></li>
           </ul>
       </section>
